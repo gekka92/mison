@@ -267,10 +267,6 @@ footer {
     margin-left:-60px;
   }
 
-  .logomison{
-    width: 20px;
-  }
-
   #menu-sp{
     display: block;
     background-color: transparent;
@@ -374,6 +370,11 @@ footer {
     margin: 0;
   }
  .onigiri{
+  text-align: center;
+ }
+
+ .img-onigiri{
+  width: 450px;
   text-align: center;
  }
 
