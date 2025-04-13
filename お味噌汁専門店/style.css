@@ -1,0 +1,418 @@
+*｛
+  box-sizing:border-box;
+}
+
+p{font-size: 15px;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbf8f5;
+}
+
+#logo img{
+  width: 100px;
+  height: auto;
+  margin-left: 100px;
+}
+
+#nav-pc{
+  font-size: 20px;
+}
+
+#nav-pc ul{
+padding-left: 0;
+display: flex;
+color:#33672f;
+font-size: 20px;
+margin: 30px 30px 10px 10px;
+}
+
+#nav-pc li{
+  list-style: none;
+}
+
+#nav-pc a{
+  text-decoration: none;
+  margin-left: 20px;
+  padding:20px;
+  color: #33672f;
+}
+
+#nav-pc a:hover{
+  color: #E34A35;
+}
+
+#nav-sp,
+#menu-sp {
+  display: none;
+}
+
+
+#main-visual{
+  position: relative;
+  height: auto;
+}
+
+#main-message > p{
+  font-size: 20px;
+  margin: 0 0 0 50px;
+  text-align: center;
+}
+
+.index-h2{
+margin-top: 40px;
+font-weight:  bold;
+font-size: 30px;
+color: #33672f;
+}
+
+h3{
+  font-size: 27px;
+  font-weight: bold;
+}
+
+#shopintroduction{
+  margin: 80px auto;
+}
+
+#shop-flex{
+  display:flex;
+}
+
+#shop-flex > div{
+  width: 50%;
+  margin: 20px;
+}
+
+#miso{
+  width: 100%;
+}
+
+#dashi{
+  margin-top: 50px;
+  width: 100%;
+}
+
+.kakomi{
+  background-color: #fbf8f5;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+#access{
+  margin: 80px auto;
+}
+
+#access-table{
+  width: 100%;
+}
+
+#access > h3{
+  font-size: 20px;
+}
+
+.tableheader{
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #E34A35;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+}
+
+.tableheader-first{
+  border-top-color: #E34A35;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.cell{
+  padding: 30px;
+  border-bottom-color: #fbf8f5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.cell-first{
+  border-top-color: #fbf8f5;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+#access > iframe{
+  width: 100%;
+  height: 368px;
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #fbf8f5;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#footer-logo{
+  margin-bottom:30px;
+}
+
+#footer-logo img{
+  width: 100px;
+  height: auto;
+}
+
+#footer-link{
+  margin-bottom: 50px;
+}
+
+#footer-link > a {
+  text-decoration:none;
+  margin: 10px;
+  color: #E34A35;
+  font-size: 20px;
+}
+
+#footer-link > a:hover {
+  text-decoration: underline;
+}
+
+#copyright{
+  color: #E34A35;
+  margin: 0;
+}
+
+
+#menu{
+  background-color: #fbf8f5;
+  margin: 80px 0;
+  padding: 10px 40px 0px 40px;
+}
+
+#miso-flex{
+  margin-top: 40px;
+  display: flex;
+}
+
+#left{
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#right{
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.misoshiru{
+  position: relative;
+  height: 480px;
+  margin:50px;
+  margin-bottom: 70px;
+}
+
+.img-miso{
+  width: 100%;
+}
+
+.title{
+  font-size: 24px;
+  color: #E34A35;
+  font-weight: bold;
+}
+
+.price{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.misoshiru > p{
+  font-size: 15px;
+}
+
+.onigiri{
+  text-align: center;
+  margin: 20px;
+}
+
+.onigiri > h3{
+  color: #E34A35;
+}
+
+.img-onigiri{
+  margin-bottom: 30px;
+}
+
+
+/*スマホ*/
+@media screen and (max-width: 767px) {
+
+  #nav-pc{
+    display:none;
+    width: 10px;
+    height: auto;
+  }
+  
+  #logo{
+    margin-left:-60px;
+  }
+
+  .logomison{
+    width: 20px;
+  }
+
+  #menu-sp{
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: none;
+  }
+
+  #nav-sp{
+    background-color: #33672f;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 150px;
+    display: none;
+    z-index:100;
+  }
+
+  #close {
+    position: absolute;
+    right: 20px;
+    top:20px;
+    background-color: transparent;
+    border: none;
+  }
+
+  #nav-sp > ul{
+    padding: 0px;
+  }
+
+  #nav-sp > li{
+    list-style: none;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  #nav-sp nav a {
+    display: block;
+    color: #ffffff;
+  }
+ 
+  #nav-sp nav a:hover {
+     text-decoration: underline;
+   }
+
+  #nav-sp .menu{
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-position: right top;
+  }
+
+  #main-visual{
+    position:relative;
+    height: 470px;
+  }
+
+  #main-visual > img{
+    width: 100%;
+    top:auto;
+    bottom: 0;
+  }
+
+  h2{
+    margin: 15px 0 15px 0;
+  }
+
+  h3{
+    font-size: 22px;
+    margin: 10px 0 0 0;
+  }
+
+  #shopintroduction{
+  margin: 20px 0 20px 0;
+  padding:0 20px 0 20px;
+  }
+
+  #shop-flex{
+    flex-direction: column;
+  }
+
+  #shop-flex > div{
+    width: 100%;
+    margin: 0;
+  }
+
+  #menu{
+    margin: 0;
+    padding: 10px 20px 0 20px;
+  }
+
+  #miso-flex{
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  #left,#right{
+    width: 100%;
+    margin: 0;
+  }
+ .onigiri{
+  text-align: center;
+ }
+
+ #access{
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+
+ #access > h3{
+  margin-bottom: 20px;
+ }
+
+ .tableheader{
+  width: 50px;
+ }
+
+ .cell{
+  padding: 20px;
+ }
+
+ #access > iframe{
+  height: 240px;
+ }
+
+ footer{
+  padding: 30px 20px 50px 20px;
+  text-align: center;
+ }
+
+ #footer-link > a{
+  margin: 0 20px 30px 0;
+  display: block;
+  text-decoration-color:#33672f;
+ }
+
+ #copyright{
+  font-size: 12px;
+  margin-top: 30px;
+ }
+
+
+}

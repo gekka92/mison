@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お味噌汁専門店mison</title>
+  <meta name="description" content="お味噌汁であなたの心は晴れ模様♪">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <a href="index.html" id="logo">
+    <img src="images/logo.png" alt"トップページに戻る">
+  </a>
+
+  <nav id="nav-pc">
+  <ul>
+    <li><a href="index.html#shopintroduction">Shop Introduction</a></li>
+    <li><a href="index.html#menu">Menu</a></li>
+    <li><a href="index.html#access">Access</a></li>
+  </ul>
+  </nav>
+
+  <!-- スマホ用メニュー　-->
+  <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <img src="images/menu.png" alt="ナビゲーションを開く">
+  </button>
+
+    <div id="nav-sp">
+      <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+      </button>
+    <nav>
+      <ul>
+      <li><a class="menu" href="index.html#shopintroduction" onclick="document.getElementById('nav-sp').style.display = 'none'">Shop introduction</a></li>
+      <li><a class="menu" href="index.html#menu" onclick="document.getElementById('nav-sp').style.display = 'none'">menu</a></li>
+      <li><a class="menu" href="index.html#access" onclick="document.getElementById('nav-sp').style.display = 'none'">access</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+<main>
+  <article>
+    <!-- メインビジュアル-->
+     <section id="main-visual">
+      <img src="images/mainvisual.png" alt"豚汁">
+     </section>
+
+     <!-- お店の紹介　-->
+      <section id="shopintroduction">
+        <h2 class="index-h2">Shop introduction</h2>
+        <div id="shop-flex">
+          <!-- miso -->
+          <div>
+            <img id="miso" src="images/miso.png" alt="味噌のイラスト">
+            <div class="kakomi">
+            <h3>当店自慢のお味噌</h3>
+            <p>
+              店主が全国を歩き回り、ようやく見つけた最高のお味噌。
+              米味噌・麦味噌・豆味噌をそれぞれ揃えており、具材に合わせて適切に配合しています。
+              日本人はもちろん、海外の方も大好きなお味となっております。
+            </p>
+           </div>
+          </div>
+          <!-- dashi -->
+          <div>
+            <img id="dashi" src="images/dashi.png" alt="カツオのイラスト">
+            <div class="kakomi">
+           <h3>こだわり抜いたお出汁</h3>
+           <p>
+            お味噌汁の味は出汁にかかっていると言っても過言ではありません。
+            煮干しと昆布やかつお節を調合し、あっさりなのに深みのある味を再現しました。
+           </p>
+           </div>
+          </div>
+        </div>
+      </section>
+     
+      <!-- menu -->
+      <section id="menu">
+        <h2 class="index-h2">Menu</h2>
+     
+        <div id="miso-flex">
+        <div id="left">
+      <!-- 豚汁 -->
+        <div class="misoshiru">
+        <h3 class="title">具だくさん豚汁</h3>
+        <img class="img-miso" src="images/tonjiru.jpeg" alt="豚汁">
+        <h4 class="price">750円(税込)</h4>
+        <p>鹿児島県産の豚肉をふんだんに使用し、お汁にとても良いお出汁が溶け込んでいます。<br>
+           人参・白菜・こんにゃくと、旬のお野菜でお汁が見えないほど具だくさんに仕上げました。</p>
+        　</div>
+
+      <!-- おあげ -->
+         <div class="misoshiru">
+          <h3 class="title">長ネギとお揚げのお味噌汁</h3>
+          <img class="img-miso" src="images/oage.jpeg" alt="お揚げのお味噌汁">
+          <h4 class="price">650円(税込)</h4>
+          <p>シャキシャキの長ネギとしっとりしたお揚げの組み合わせが癖になります。<br>
+            お揚げにしみ込んだ白味噌の旨味をぜひご体感ください。</p>
+          </div>
+        </div> 
+        
+        <div id="right">
+      <!-- カレー -->
+         <div class="misoshiru">
+          <h3 class="title">スパイス風 カレー味噌汁</h3>
+          <img class="img-miso" src="images/curry.jpeg" alt="スパイス風 カレー味噌汁">
+          <h4 class="price">700円(税込)</h4>
+          <p>和と洋の絶妙なハーモニー。カレーとお味噌汁というありそうでなかった組み合わせ。<br>
+             ピリッとスパイスの効いたお汁は、きっと万人が好きな味です。</p>
+         </div>
+
+      <!-- あさり -->
+       <div class="misoshiru">
+        <h3 class="title">あさりと魚介だしのお味噌汁</h3>
+        <img class="img-miso" src="images/asari.jpeg" alt="あさりと魚介だしのお味噌汁">
+        <h4 class="price">700円(税込)</h4>
+        <p>これぞ本格的な海鮮味噌汁。あさりの旨味も極限まで引き出しました。<br>
+           貝好き・お魚好きにはたまらない逸品です。</p>
+       </div>   
+
+       </div>
+       </div>
+
+       <div class="onigiri">
+        <h3>全メニューおにぎり付き</h3>
+        <img class="img-onigiri" src="images/rice.jpeg" alt="おにぎり">
+       </div>
+      </section>
+
+     <!-- Access -->
+      <section id="access">
+      <h2 class="index-h2">Access</h2>
+      <h3>お味噌汁で心も体もぽかぽかに。</h3>
+
+      <table id="access-table">
+      <tr>
+        <th class="tableheader tabeleheader-first">店名</th>
+        <td class="cell cell-first">mison(みそん)</td>
+      </tr>
+
+      <tr>
+        <th class="tableheader">場所</th>
+        <td class="cell">5 Ave. Anatole France Champs de Mars 75007 Paris</td>
+      </tr>
+
+      <tr>
+        <th class="tableheader">時間</th>
+        <td class="cell">11:00~19:00</td>
+      </tr>
+
+      <tr>
+        <th class="tableheader">定休日</th>
+        <td class="cell">水曜日</td>
+      </tr>
+      </table>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916246075636!2d2.2944812999999997!3d48.858370099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z44Ko44OD44OV44Kn44Or5aGU!5e0!3m2!1sja!2sjp!4v1742784332932!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      
+      </section>
+  </article>
+</main>
+
+<!-- フッター　-->
+  <footer>
+    <div id="footer-logo">
+      <img src="images/logo.png" alt="ロゴ">
+    </div>
+    
+    <div>
+    <div id="footer-link">
+      <a href="index.html#shopintroduction">Shop Introduction</a>
+      <a href="index.html#menu">Menu</a>
+      <a href="index.html#access">Access</a>
+     </div>
+     <p id="copyright">&copy;2025 mison, All Rights Reserved.</p>
+     </div>
+    
+    </footer>
+</body>
+</html>
